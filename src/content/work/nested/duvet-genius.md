@@ -1,22 +1,113 @@
 ---
-title: Duvet Genius
+title: Tasker
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img: /assets/GeminiDroid.png
+img_alt: Android Gemini
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  I Developed an Android Application for letting AI manage your tasks, powered by Gemini API
 tags:
   - Design
   - Dev
-  - Branding
+  - Gemini API
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+# Tasker - AI-Powered Task Management App (Jetpack Compose)
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+## 🚀 Project Overview  
+Tasker is an **AI-driven task management app** built using **Jetpack Compose** for Android. It leverages **Google's Gemini AI** to help users manage tasks efficiently by prioritizing them based on deadlines, importance, and personal productivity patterns. The app provides an intuitive UI and real-time recommendations, making task management seamless and smart.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+---
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## 🛠 Tech Stack  
+- **Frontend:** Jetpack Compose (Kotlin)  
+- **AI Integration:** Google Gemini API  
+- **State Management:** MutableStateFlow, LiveData  
+- **Database:** Room Database (for offline storage)  
+- **Backend:** Firebase (Authentication & Firestore)  
+- **Navigation:** Jetpack Navigation Component  
+- **Notifications:** WorkManager & Firebase Cloud Messaging (FCM)  
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+---
+
+## 🎯 Features Implemented  
+### ✨ AI-Powered Task Management  
+- Uses **Gemini AI** to analyze and prioritize tasks  
+- Generates **smart task recommendations** based on urgency and user behavior  
+  
+### 🔑 User Authentication  
+- Sign in with Google via Firebase Authentication  
+- Secure user data handling  
+  
+### 📅 Task Creation & Organization  
+- Users can add, edit, and delete tasks  
+- Categorization based on **priority, deadline, and tags**  
+  
+### 🔔 Smart Reminders & Notifications  
+- AI suggests optimal reminder times  
+- Push notifications for task deadlines  
+  
+### 🌙 Dark Mode & Custom Themes  
+- Dynamic UI with Jetpack Compose's **Material 3**  
+- Light/Dark theme based on system settings  
+  
+### 📶 Offline Mode Support  
+- Task data is stored locally using **Room Database**  
+- Syncs with Firebase when online  
+
+---
+
+## 🏗 Jetpack Compose Implementation  
+### 📌 MVVM Architecture  
+- **ViewModel:** Handles UI logic  
+- **Repository Pattern:** Manages data sources  
+- **Use Cases:** Encapsulate business logic  
+  
+### 🎨 Composable UI Components  
+- `TaskItem`: Displays individual tasks  
+- `TaskListScreen`: Shows task lists  
+- `TaskDetailScreen`: Provides detailed task view  
+- `AIInsightsScreen`: Displays AI-generated task recommendations  
+  
+### ⚡ State Management  
+- Uses **MutableStateFlow** for real-time UI updates  
+- **LiveData** for observing backend changes  
+  
+### 🏄‍♂️ Navigation  
+- Jetpack Navigation component for seamless user flow  
+
+---
+
+## 🚧 Challenges & Solutions  
+✅ **AI Task Prioritization**  
+   - Used Gemini API to process tasks and assign smart priority levels  
+  
+✅ **Efficient Data Syncing**  
+   - Implemented Firestore with local Room caching for offline support  
+  
+✅ **Real-Time Task Suggestions**  
+   - Integrated Gemini's NLP capabilities to generate actionable insights  
+  
+✅ **Push Notifications for Task Deadlines**  
+   - Used WorkManager & Firebase Cloud Messaging (FCM) for reminders  
+
+---
+
+## 🔮 Future Enhancements  
+- 🗣 **Voice Command Support** using Gemini AI  
+- 🎭 **Task Sharing & Collaboration** with other users  
+- 🏆 **Gamification Features** for motivation  
+- 🔄 **Auto-Scheduling of Tasks** based on user behavior  
+- 📊 **Task Insights & Productivity Reports**  
+
+---
+
+## 📌 Conclusion  
+The **Tasker** app, powered by **Jetpack Compose** and **Gemini AI**, provides a smart, user-friendly way to manage and prioritize tasks. With **intelligent scheduling, real-time notifications, and offline support**, it ensures users stay productive and organized effortlessly.
+
+> 🚀 *This project showcases my expertise in AI integration, Jetpack Compose, and modern Android development.*  
+
+---
+
+📌 **GitHub Repository:** [Coming Soon]  
+📌 **Live Demo:** [Coming Soon]  
+
