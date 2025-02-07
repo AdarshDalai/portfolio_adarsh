@@ -10,16 +10,16 @@ tags:
   - FastAPI, Supabase
 ---
 
-# Utter Application
+##### Utter Application
 
-## Overview
+Overview
 Utter is a social media application designed to connect people through seamless interactions. With a user-friendly interface and robust features, Utter provides a platform for users to share their thoughts, media, and engage with a vibrant community.
 
 ---
 
-## Features
+Features
 
-### Core Features:
+Core Features:
 1. **User Authentication:**
    - Secure login and signup with Supabase integration.
    - Password hashing for enhanced security.
@@ -44,31 +44,31 @@ Utter is a social media application designed to connect people through seamless 
 
 ---
 
-## Tech Stack
+Tech Stack
 
-### Backend:
+Backend:
 - **Framework:** FastAPI
 - **Database:** PostgreSQL (via Supabase)
 - **Storage:** Cloudflare R2 for media assets
 - **Authentication:** Supabase's authentication service
 
-### Frontend:
+Frontend:
 - **Android:** Jetpack Compose
 - **iOS:** SwiftUI
 - **API Calls:** Ktor for Android and iOS
 
 ---
 
-## Architecture
+Architecture
 
-### Backend:
+Backend:
 - **Microservices:**
   - Separate services for feed, uploads, and other core functionalities.
 - **Database Access:**
   - Direct integration with PostgreSQL for enhanced performance and flexibility.
   - Supabase used for authentication and user data.
 
-### Frontend:
+Frontend:
 - **Android and iOS:**
   - MVVM architecture for clean code and scalability.
 - **File Structure:**
@@ -77,7 +77,7 @@ Utter is a social media application designed to connect people through seamless 
 
 ---
 
-## Key User Stories
+Key User Stories
 
 1. **Account Management:**
    - Create an account, log in, update profile details, and manage followers.
@@ -95,19 +95,19 @@ Utter is a social media application designed to connect people through seamless 
 
 ---
 
-## Deployment Plan
+Deployment Plan
 
-### Backend:
+Backend:
 - Hosted on cloud platforms like AWS, Azure, or GCP.
 - Endpoints optimized for scalable and reliable performance.
 
-### Frontend:
+Frontend:
 - Deployed on Google Play Store (Android) and Apple App Store (iOS).
 - Seamless integration with backend services for real-time interactions.
 
 ---
 
-## Future Enhancements
+Future Enhancements
 
 1. **AI Integration:**
    - Leverage AI to provide smart content recommendations and moderation.
@@ -123,5 +123,5 @@ Utter is a social media application designed to connect people through seamless 
 
 ---
 
-## About the Developer
+About the Developer
 Utter is developed by Adarsh, a passionate app developer exploring both mobile application development and the AI space. Adarsh aims to create impactful technology that fosters connection and innovation.

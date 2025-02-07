@@ -11,14 +11,14 @@ tags:
   - Gemini API
 ---
 
-# Tasker - AI-Powered Task Management App (Jetpack Compose)
+#### Tasker - AI-Powered Task Management App (Jetpack Compose)
 
-## 🚀 Project Overview  
+Project Overview  
 Tasker is an **AI-driven task management app** built using **Jetpack Compose** for Android. It leverages **Google's Gemini AI** to help users manage tasks efficiently by prioritizing them based on deadlines, importance, and personal productivity patterns. The app provides an intuitive UI and real-time recommendations, making task management seamless and smart.
 
 ---
 
-## 🛠 Tech Stack  
+Tech Stack  
 - **Frontend:** Jetpack Compose (Kotlin)  
 - **AI Integration:** Google Gemini API  
 - **State Management:** MutableStateFlow, LiveData  
@@ -29,55 +29,55 @@ Tasker is an **AI-driven task management app** built using **Jetpack Compose** f
 
 ---
 
-## 🎯 Features Implemented  
-### ✨ AI-Powered Task Management  
+Features Implemented  
+**AI-Powered Task Management**  
 - Uses **Gemini AI** to analyze and prioritize tasks  
 - Generates **smart task recommendations** based on urgency and user behavior  
   
-### 🔑 User Authentication  
+**User Authentication** 
 - Sign in with Google via Firebase Authentication  
 - Secure user data handling  
   
-### 📅 Task Creation & Organization  
+**Task Creation & Organization**  
 - Users can add, edit, and delete tasks  
 - Categorization based on **priority, deadline, and tags**  
   
-### 🔔 Smart Reminders & Notifications  
+**Smart Reminders & Notifications**
 - AI suggests optimal reminder times  
 - Push notifications for task deadlines  
   
-### 🌙 Dark Mode & Custom Themes  
+**Dark Mode & Custom Themes** 
 - Dynamic UI with Jetpack Compose's **Material 3**  
 - Light/Dark theme based on system settings  
   
-### 📶 Offline Mode Support  
+**Offline Mode Support**  
 - Task data is stored locally using **Room Database**  
 - Syncs with Firebase when online  
 
 ---
 
-## 🏗 Jetpack Compose Implementation  
-### 📌 MVVM Architecture  
+Jetpack Compose Implementation 
+**MVVM Architecture**
 - **ViewModel:** Handles UI logic  
 - **Repository Pattern:** Manages data sources  
 - **Use Cases:** Encapsulate business logic  
   
-### 🎨 Composable UI Components  
+**Composable UI Components** 
 - `TaskItem`: Displays individual tasks  
 - `TaskListScreen`: Shows task lists  
 - `TaskDetailScreen`: Provides detailed task view  
 - `AIInsightsScreen`: Displays AI-generated task recommendations  
   
-### ⚡ State Management  
+**State Management**  
 - Uses **MutableStateFlow** for real-time UI updates  
 - **LiveData** for observing backend changes  
   
-### 🏄‍♂️ Navigation  
+**Navigation**
 - Jetpack Navigation component for seamless user flow  
 
 ---
 
-## 🚧 Challenges & Solutions  
+**Challenges & Solutions**
 ✅ **AI Task Prioritization**  
    - Used Gemini API to process tasks and assign smart priority levels  
   
@@ -92,7 +92,7 @@ Tasker is an **AI-driven task management app** built using **Jetpack Compose** f
 
 ---
 
-## 🔮 Future Enhancements  
+**Future Enhancements**  
 - 🗣 **Voice Command Support** using Gemini AI  
 - 🎭 **Task Sharing & Collaboration** with other users  
 - 🏆 **Gamification Features** for motivation  
@@ -101,10 +101,8 @@ Tasker is an **AI-driven task management app** built using **Jetpack Compose** f
 
 ---
 
-## 📌 Conclusion  
+**Conclusion**
 The **Tasker** app, powered by **Jetpack Compose** and **Gemini AI**, provides a smart, user-friendly way to manage and prioritize tasks. With **intelligent scheduling, real-time notifications, and offline support**, it ensures users stay productive and organized effortlessly.
-
-> 🚀 *This project showcases my expertise in AI integration, Jetpack Compose, and modern Android development.*  
 
 ---
 
